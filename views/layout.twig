@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog PHP - Wilder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Blog PHP</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quia nemo architecto minima impedit quos dolores quam, officiis doloremque, numquam voluptatibus veniam incidunt? Mollitia repellendus maxime, voluptas minus ex accusantium!</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <a href="{{'admin' | url }}">Manager Panel</a>
+                    <br>
+                    This a footer
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
