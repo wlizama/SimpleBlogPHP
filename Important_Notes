@@ -1,8 +1,0 @@
-## Pagina de paquetes PHP
-https://packagist.org/
-
-## Solucion mod_rewrite
-http://trucosdeprogramacionmovil.blogspot.pe/2013/01/resolviendo-problemas-con-apache-htaccess.html
-
-## ejecutar para autoload
-php composer.phar dump-autoload -o
