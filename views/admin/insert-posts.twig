@@ -5,6 +5,17 @@
     <a href="{{ 'admin/posts' | url }}"><- Back</a>
     
     <form method="POST">
+        {% if errors %}
+        <div class="alert alert-danger">
+            <ul>
+                {% for input, messages in errors %}
+                    {% for message in messages %}
+                        <li>{{input}} {{ message }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
         {% if result %}
         <div class="alert alert-success">Success!!!</div>
         {% endif %}
