@@ -36,6 +36,10 @@ class AuthController extends BaseController{
         return $this->render("login.twig", [
             "errors" => $errors
         ]);
+    }
 
+    public function getLogout(){
+        unset($_SESSION["userId"]);
+        header("location: " . BASE_URL . "auth/login");
     }
 }
