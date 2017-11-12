@@ -1,5 +1,5 @@
 .env
-!logs/*
+logs/*
 config.php
 composer.phar
 vendor/

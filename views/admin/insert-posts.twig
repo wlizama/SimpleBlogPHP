@@ -4,7 +4,7 @@
     <h2>New Post</h2>
     <a href="{{ 'admin/posts' | url }}"><- Back</a>
     
-    <form method="POST">
+    <form method="POST" onsubmit="return validateForm();">
         {% if errors %}
         {% include "partials/errors.twig" %}
         {% endif %}
@@ -27,4 +27,16 @@
         </div>
         <input class="btn btn-primary" type="submit" value="Enviar">
     </form>
+{% endblock %}
+
+{% block js %}
+    <script>
+        function validateForm() {
+            var title = document.getElementById("txtTitle").value.trim();
+            if (title === "") {
+                swal("Alerta", "Titulo es requerido", "error");
+                return false;
+            }
+        }
+    </script>
 {% endblock %}
