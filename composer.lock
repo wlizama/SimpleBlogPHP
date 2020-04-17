@@ -677,23 +677,23 @@
         },
         {
             "name": "siriusphp/validation",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/siriusphp/validation.git",
-                "reference": "d2140d71aeeaf54797907a03e11cc20418ac86c4"
+                "reference": "fa93b302802616b1dcf7e38244a70e324c121fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/siriusphp/validation/zipball/d2140d71aeeaf54797907a03e11cc20418ac86c4",
-                "reference": "d2140d71aeeaf54797907a03e11cc20418ac86c4",
+                "url": "https://api.github.com/repos/siriusphp/validation/zipball/fa93b302802616b1dcf7e38244a70e324c121fb4",
+                "reference": "fa93b302802616b1dcf7e38244a70e324c121fb4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^3.7"
+                "phpunit/phpunit": "^4.8"
             },
             "type": "library",
             "autoload": {
@@ -719,7 +719,7 @@
                 "security",
                 "validation"
             ],
-            "time": "2017-03-07T16:35:59+00:00"
+            "time": "2019-08-11T13:55:53+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
